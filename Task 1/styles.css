@@ -1,0 +1,143 @@
+:root {
+    --bg: #fafafa;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --shadow: 0 2px 6px rgba(16, 24, 40, 0.06);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: #111827;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 0 16px 56px;
+}
+
+.topbar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 1.4rem
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.search-wrap,
+.filter-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input[type="search"],
+select {
+    padding: 8px 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    min-width: 200px;
+    font-size: 0.95rem;
+}
+
+.category-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.category-buttons button {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    padding: 6px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.category-buttons button.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.status {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 6px
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card .name {
+    font-weight: 600
+}
+
+.card .category {
+    color: var(--muted);
+    font-size: 0.85rem
+}
+
+.card .price {
+    margin-top: auto;
+    font-weight: 700;
+    color: var(--accent)
+}
+
+.no-results {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 8px;
+    background: #fff3f2;
+    color: #7f1d1d;
+    border: 1px solid #fee2e2;
+    max-width: 600px;
+}
+
+@media (max-width:520px) {
+    .controls {
+        flex-direction: column;
+        align-items: stretch
+    }
+    input[type="search"],
+    select {
+        min-width: auto;
+        width: 100%
+    }
+}

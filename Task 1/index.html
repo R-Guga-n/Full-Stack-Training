@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dynamic Product Catalog</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="container">
+        <header class="topbar">
+            <h1>Product Catalog</h1>
+            <div class="controls">
+                <div class="search-wrap">
+                    <label for="search">Search</label>
+                    <input id="search" type="search" placeholder="Search products by name..." />
+                </div>
+
+                <div class="filter-wrap">
+                    <label for="category">Category</label>
+                    <select id="category">
+            <option value="All">All</option>
+          </select>
+                </div>
+            </div>
+            <div id="category-buttons" class="category-buttons" aria-hidden="false"></div>
+            <div class="status">
+                <span id="count"></span>
+            </div>
+        </header>
+
+        <section id="products" class="product-grid" aria-live="polite">
+
+        </section>
+
+        <div id="no-results" class="no-results" hidden>
+            No products found.
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
