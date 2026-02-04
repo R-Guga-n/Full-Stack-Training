@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #1e90ff;
+    --base-font-size: 16px;
+    --bg: #ffffff;
+    --text: #111111;
+}
+
+
+/* Theme classes applied to <body> */
+
+body.light {
+    --bg: #ffffff;
+    --text: #111111;
+}
+
+body.dark {
+    --bg: #0f1115;
+    --text: #e6e7ea;
+}
+
+
+/* Use variables */
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-size: var(--base-font-size);
+    margin: 1.5rem;
+    transition: background 200ms ease, color 200ms ease;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.03);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    margin: .5rem 0;
+}
+
+fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: .5rem;
+    margin-bottom: .75rem;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+input[type="color"] {
+    width: 3rem;
+    height: 2rem;
+    padding: 0;
+    border: none;
+    background: none;
+    vertical-align: middle;
+}
+
+.buttons {
+    margin-top: .75rem;
+    display: flex;
+    gap: .5rem;
+}
+
+button.primary {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: .5rem .75rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.primary:hover {
+    filter: brightness(.95);
+}
+
+.preview {
+    padding: .75rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.errors {
+    color: #b00020;
+    margin-top: .5rem;
+    min-height: 1.25rem;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Theme Switcher with Preferences</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light">
+    <main>
+        <h1>Theme Switcher — Preferences</h1>
+
+        <form id="prefsForm" novalidate>
+            <fieldset>
+                <legend>Theme</legend>
+                <label>
+          <input type="radio" name="theme" value="light" /> Light
+        </label>
+                <label>
+          <input type="radio" name="theme" value="dark" /> Dark
+        </label>
+            </fieldset>
+
+            <label for="fontSize">Font size (<span id="fontSizeValue">16</span> px)</label>
+            <input id="fontSize" name="fontSize" type="range" min="12" max="24" step="1" />
+
+            <label for="primaryColor">Primary color</label>
+            <input id="primaryColor" name="primaryColor" type="color" />
+
+            <div id="errors" aria-live="polite" class="errors"></div>
+
+            <div class="buttons">
+                <button type="submit">Apply & Save</button>
+                <button type="button" id="resetBtn">Reset to defaults</button>
+            </div>
+        </form>
+
+        <section class="preview">
+            <h2>Preview</h2>
+            <p id="previewText">
+                This is a preview area. The primary color and font size update from your preferences.
+            </p>
+            <button class="primary">Primary action</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
