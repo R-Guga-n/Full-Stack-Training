@@ -1,0 +1,7 @@
+[
+    { "id": 1, "name": "Laptop", "price": 50000, "discount": 10, "stock": true },
+    { "id": 2, "name": "Headphones", "price": 2000, "discount": 5, "stock": true },
+    { "id": 3, "name": "Phone", "price": 15000, "discount": 8, "stock": false },
+    { "id": 4, "name": "Watch", "price": 3000, "discount": 0, "stock": true },
+    { "id": 5, "name": "Camera", "price": 25000, "discount": 12, "stock": true }
+]

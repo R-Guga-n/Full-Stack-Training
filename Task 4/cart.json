@@ -1,0 +1,14 @@
+{
+    "items": [
+        { "id": 1, "sku": "TSHIRT-01", "name": "Soft Tee", "price": 19.99, "qty": 2, "stock": 10 },
+        { "id": 2, "sku": "MUG-01", "name": "Coffee Mug", "price": 9.5, "qty": 1, "stock": 0 },
+        { "id": 3, "sku": "HAT-01", "name": "Baseball Cap", "price": 15.0, "qty": 3, "stock": 5 }
+
+
+    ],
+    "discounts": {
+        "TSHIRT-01": { "type": "pct", "value": 10 },
+        "HAT-01": { "type": "fixed", "value": 2.0 }
+    },
+    "coupon": { "type": "pct", "value": 5 }
+}
