@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #bcbfc9;
+}
+
+.container {
+    width: 800px;
+    margin: 30px auto;
+    background: #515255;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input,
+select,
+button {
+    padding: 8px;
+}
+
+button {
+    background: #45d438;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+
+.large-expense {
+    background: #ffcccc;
+}
+
+.summary {
+    margin-top: 20px;
+    padding: 10px;
+    background: #eef;
+    border-radius: 8px;
+}
